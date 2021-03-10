@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+a:visited,
+a:link {
+  color: black;
+}
+
+html,
+body,
+* {
+  font-family: monospace, 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 0 2%;
+  border-bottom: 3px solid black;
+  -webkit-box-shadow: 3px 3px 2px whitesmoke;
+          box-shadow: 3px 3px 2px whitesmoke;
+}
+
+header img {
+  width: 100px;
+  border-radius: 50%;
+  border-bottom: 3.5px solid #525255;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container .user-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 2px #525255;
+          box-shadow: 3px 3px 2px #525255;
+  width: 80%;
+  padding: 1% 2%;
+  margin: 2% auto;
+}
+
+#container .user-card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#container .user-card h2 {
+  margin-bottom: 1%;
+}
+
+#container .user-card p {
+  line-height: normal;
+}
+
+#container .user-card img {
+  border-radius: 50%;
+  width: 200px;
+  -webkit-box-shadow: 3px 3px 1px #525255;
+          box-shadow: 3px 3px 1px #525255;
+}
+
+#container .follower-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 2px solid black;
+  -webkit-box-shadow: 3px 3px 2px #525255;
+          box-shadow: 3px 3px 2px #525255;
+  border-radius: 15px;
+  padding: 1% 1%;
+  margin: 1% auto;
+}
+
+#container .follower-card img {
+  border-radius: 50%;
+  width: 160px;
+  -webkit-box-shadow: 3px 3px 1px #525255;
+          box-shadow: 3px 3px 1px #525255;
+}
+
+#container .follower-card h3 {
+  margin-bottom: 4%;
+}
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.search-bar input {
+  width: 200px;
+  height: 35px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1%;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 1px #525255;
+          box-shadow: 3px 3px 1px #525255;
+}
+
+.search-bar button {
+  font-size: 1.4rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 1px #525255;
+          box-shadow: 3px 3px 1px #525255;
+  padding: 5px 15px;
+}
+/*# sourceMappingURL=styles.css.map */
