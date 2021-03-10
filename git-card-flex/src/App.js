@@ -10,6 +10,7 @@ class App extends React.Component {
     user: {},
     followers: [],
     searchText: '',
+    followerCardsOn: false,
   };
 
   componentDidMount() {
@@ -38,6 +39,10 @@ class App extends React.Component {
 
   handleSearch = (e) => {
     this.setState({ searchText: e.target.value });
+  };
+
+  showFollowers = () => {
+    this.setState({ followerCardsOn: !this.state.followerCardsOn });
   };
 
   handleSubmit = (e) => {
@@ -78,10 +83,11 @@ class App extends React.Component {
           handleSearch={this.handleSearch}
         />
         <div id="container">
-          <UserCard user={this.state.user} />
-          {this.state.followers.map((follower) => {
-            return <FollowerCard followers={follower} />;
-          })}
+          <UserCard user={this.state.user} showFollowers={this.showFollowers} />
+          {this.state.followerCardsOn &&
+            this.state.followers.map((follower) => {
+              return <FollowerCard followers={follower} />;
+            })}
         </div>
       </div>
     );
